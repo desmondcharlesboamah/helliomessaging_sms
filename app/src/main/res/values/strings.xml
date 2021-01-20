@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">HellioMessagingSMS</string>
+    <string name="client_id">5ef1f8144b051</string>
+    <string name="applicationSecret">625108bf14c9a5b390dde9f972e3ac37</string>
+    <string name="senderid">Callmode</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="next">Next</string>
+    <string name="enter_client_id">Enter Client ID</string>
+    <string name="enter_application_secret">Enter Application Secret</string>
+    <string name="send_sms">Send SMS</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="enter_message">Enter Message</string>
+    <string name="empty" />
+    <string name="no_network">No Network!</string>
+    <string name="all_fields_required">All fields required!</string>
+    <string name="sending">Sending ...</string>
+    <string name="enter_sender_id">Enter Sender ID</string>
+</resources>

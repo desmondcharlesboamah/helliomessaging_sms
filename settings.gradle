@@ -1,0 +1,3 @@
+include ':sms'
+include ':app'
+rootProject.name = "HellioMessagingSMS"
