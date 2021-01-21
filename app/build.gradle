@@ -28,25 +28,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    /****GitHubPackages Path and credentials***/
-    repositories {
-        maven {
-            name = "HellioMessaging"
-            /*  Configure path to the library hosted on GitHub Packages Registry
-             *  Replace UserID with package owner userID and REPOSITORY with the repository name
-             *  e.g. "https://maven.pkg.github.com/enefce/AndroidLibraryForGitHubPackagesDemo"
-             */
-            //url = uri("https://maven.pkg.github.com/UserID/REPOSITORY")
-            url = uri("https://maven.pkg.github.com/desmondcharlesboamah/helliomessaging_sms")
-
-            credentials {
-                /**Create github.properties in root project folder file with gpr.usr=GITHUB_USER_ID  & gpr.key=PERSONAL_ACCESS_TOKEN**/
-                username = githubProperties['gpr.usr'] ?: System.getenv("desmondcharlesboamah")
-                password = githubProperties['gpr.key'] ?: System.getenv("3582fe91e962ba6ff316a1e20b00120f65f73d94")
-            }
-        }
-    }
-
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -65,8 +46,8 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
 
 //consume library
-    implementation 'com.helliomessaging.sms:sms:1.0.2'
-    //implementation project(':sms')
+    //implementation 'com.helliomessaging.sms:sms:1.0.2'
+    implementation project(':sms')
 
     testImplementation 'junit:junit:4.13.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
