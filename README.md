@@ -52,3 +52,12 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 
+#### Request Parameters
+
+|Parameter                   |Type   |Description|Required|
+| ----------------------------- | :-----:| ----------------------------- | ----------------------------- |
+|PHONE_NUMBER|String| The mobile number to send the messages to. If you're sending to countries other than Ghana, prefix the number with the country code eliminating the +.|Required|
+|CLIENT_ID |String| Your Hellio client id|Required|
+|APPLICATION_SECRET|String| Your Hellio applicationsecret|Required|
+|SENDER_ID|String|The senderId you wish to used to send your messages. Note that the sender Id should be 11 characters max including space. Anything more than that will result in your messages failing.|Required|
+|MESSAGE|String|Content of your message should go here!|Required|
